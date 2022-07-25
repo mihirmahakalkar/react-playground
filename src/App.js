@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import BasicSearch from './components/search/BasicSearch';
+import TableSearch from './components/search/TableSearch';
+import StarRating from './components/starRating/StarRating';
 
 function App() {
+
+  const scrollTop = () => {
+    document.body.scrollTo({top: 0, behavior: 'smooth'});
+    document.documentElement.scrollTo({top: 0, behavior: 'smooth'});
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <>
+        <h1>React Playground</h1>
+        <a className="toc" href="#starRating">STAR RATING</a>
+        <a className="toc" href="#basicSearch">BASIC SEARCH</a>
+        <a className="toc" href="#tableSearch">TABLE SEARCH</a>
+        <button className="scrollTop" onClick={scrollTop}>&#8593;</button>
+
+        <StarRating totalStars={9} />
+        <BasicSearch />
+        <TableSearch />
+      </>
     </div>
   );
 }

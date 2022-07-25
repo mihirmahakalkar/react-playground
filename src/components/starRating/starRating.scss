@@ -1,0 +1,19 @@
+.starRating {
+    display: flex;
+
+    button {
+        font-size: 30px;
+        padding: 0;
+        background: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .on {
+        color: goldenrod;
+    }
+    .off {
+        color: #ccc;
+    }
+}

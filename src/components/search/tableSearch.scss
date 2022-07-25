@@ -1,0 +1,46 @@
+.tableSearch {
+  margin: 50px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 900px;
+  background: #eee;
+  border-radius: 10px;
+
+  .search {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  table {
+    width: 100%;
+    margin: 50px 0px;
+    border-spacing: 15px;
+    color: #444;
+    border-spacing: 0;
+    color: #444;
+    font-weight: 300;
+  }
+
+  tr {
+    margin-bottom: 20px;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #ccc;
+  }
+
+  th {
+    width: 250px;
+    text-align: left;
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  td {
+    width: 250px;
+    font-size: 20px;
+    padding: 5px;
+  }
+}
