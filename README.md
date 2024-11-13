@@ -1,4 +1,4 @@
-# Demo URL: [React-playground](https://darkbyte7.github.io/react-playground/)
+# Demo URL: [React-playground](https://mihirmahakalkar.github.io/react-playground/)
 
 
 ## Getting Started with Create React App
